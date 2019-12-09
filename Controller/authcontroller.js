@@ -186,7 +186,7 @@ const forgetPassword = async function(req, res) {
   } catch (err) {
     // res.json({token:user.resetToken});
 
-    status(404).json({
+    res.status(404).json({
       status: err
     });
   }
